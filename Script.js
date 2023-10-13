@@ -48,5 +48,7 @@ const getMaindata = async () => {
 getMaindata()
 
 function changebgtheme(){
-    
+    const element = document.body
+    element.dataset.bsTheme = 
+    element.dataset.bsTheme =="light" ? "dark" : "light";
 }
