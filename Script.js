@@ -14,7 +14,7 @@ const getdata = async () => {
     const b = await a.json()
     b.map((index, value) => {
         let preproduct = document.querySelector("#alpha")
-        preproduct.innerHTML += '<div class="card magic bg-body-tertiary my-2 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 16rem;">' +
+        preproduct.innerHTML += '<div class="card magic bg-body-tertiary my-2 mx-3 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 16rem;">' +
             '<img src="' + index.image + '" class="card-img-top" alt="No-Internet">' +
             '<div class="card-body">' +
             '<h5 class="card-title">' + index.Title + '</h5>' +
@@ -33,7 +33,7 @@ const getMaindata = async () => {
     const b = await a.json()
     b.map((index, value) => {
         let preproduct = document.querySelector("#beta")
-        preproduct.innerHTML += '<div class="card magic bg-body-tertiary my-2 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 16rem;">' +
+        preproduct.innerHTML += '<div class="card magic bg-body-tertiary my-2 mx-3 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="width: 16rem;">' +
             '<img src="' + index.image + '" class="card-img-top" alt="No-Internet">' +
             '<div class="card-body">' +
             '<h5 class="card-title">' + index.Title + '</h5>' +
@@ -46,9 +46,3 @@ const getMaindata = async () => {
     })
 }
 getMaindata()
-
-function changebgtheme(){
-    const element = document.body
-    element.dataset.bsTheme = 
-    element.dataset.bsTheme =="light" ? "dark" : "light";
-}
